@@ -1,0 +1,27 @@
+{
+  "operation": "EXECUTE_COMMAND",
+  "version": "4.1",
+  "timestamp": {
+    "start": "2026-04-07T12:41:09.010724",
+    "end": null,
+    "duration_ms": null
+  },
+  "input": {
+    "port": "COM25",
+    "command": "W6d"
+  },
+  "status": "ERROR",
+  "exit_code": 3,
+  "result": {},
+  "errors": [
+    {
+      "timestamp": "2026-04-07T12:41:09.010724",
+      "message": "Error de conexión: could not open port 'COM25': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)"
+    }
+  ],
+  "metadata": {
+    "hostname": "david",
+    "python_version": "3.11.9",
+    "os": "Windows"
+  }
+}

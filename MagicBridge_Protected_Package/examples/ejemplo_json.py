@@ -86,7 +86,7 @@ def programar_chip():
             resultado = json.load(f)
         
         print(f"✅ Programación exitosa")
-        print(f"   Comando: {resultado['command']}")
+        print(f"   Comando: {resultado.get('input', {}).get('command', comando)}")
         print(f"   Tiempo: {resultado['timestamp']['duration_ms']}ms")
         return True, resultado
     else:
